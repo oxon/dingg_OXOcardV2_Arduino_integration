@@ -1,0 +1,7 @@
+{
+	"name":	"testing-stage",
+	"id":	"84c4a3d1-d1fe-4722-b8ce-53d49c6b3e97",
+	"ota_hostname":	"api.oxocard.ch",
+	"ota_path_prefix":	"/v1",
+	"ota_port":	443
+}

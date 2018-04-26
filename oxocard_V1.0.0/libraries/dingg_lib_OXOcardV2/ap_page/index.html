@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Oxocard WiFi Setup</title>
+	<meta name="description" content="WiFi Setup for OXOcard">
+	<meta name="author" content="OXON AG">
+	<link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gITEBUtwXiiKQAAAWZJREFUeNrt2cFJA0EUh/Fvk0XdvQsKpgQtw5OSEjyrFXgxpAktIRWkFgkSRQOKLOJBopBE14M5pIC8AdfvX8DMvt/MvB2YrL/bq4nLGDjsPffvSJSL4V5kPbQwggkmmGCCGcEEE0wwwQSTQDDBBBNMMCOYYIIJJpgLkgOjoLEz4AGYJa5pFA3WDQSbteAlMVg3cvAsRQWPnBUZdIASqCMWBrjt1Ffz6IryFGBLrEtgH1isefg28ASckFGl6GEpUi6xDoLG3wE2mnStqAN21mrmAUfde5hgggkmmGBGMMEEE0wwI5hgggkmmGASCCbYfwTLgudqk+jJMNWr0QJ4A975fbBYdw2vwFeTwG6A4+VOiMg3MG3Mua/ON9NMNJjE95bqtPgI7I9j4Gj7+vM+2eoMJtPIfpYDReDnb6Vqxisp//JfsqZh8R4mmGCCCSaYEUwwwQQTzAgmmGCCCSaYEUwwwQRrZH4A09sz2tYskpwAAAAASUVORK5CYII=">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+<main>
+	<div class="mascot">
+		<!-- IMG media/mascot_positive.svg -->
+		<!-- IMG media/mascot_negative.svg -->
+		<div id="negative_message" class="message negative"></div>
+		<div id="positive_message" class="message positive"></div>
+	</div>
+
+	<h1 class="de">WiFi einrichten.<br />Wähle dein Netzwerk.</h1>
+	<h1 class="en" style="display:none">Setup WiFi.<br />Please choose a network.</h1>
+
+	<form onsubmit="return testWifiConfiguration()" autocomplete="off">
+		<div id="wifiSelection">
+			<div class="md-select" id="wifiList">
+				<div class="md-select__dropdown">
+					<ul>
+						
+					</ul>
+					<input type="hidden" name="wifi_name_list" value="" />
+				</div>
+			</div>
+		</div>
+
+		<label id="wifi_manual_input" style="display:none;">
+			<span class="de">Netzwerkname</span>
+			<span class="en" style="display:none">Networkname</span>
+			<input type="text" name="wifi_name_manual" />
+		</label>
+
+		<label>
+			<span class="de">Passwort</span>
+			<span class="en" style="display:none">Password</span>
+			<input type="password" name="wifi_password" />
+		</label>
+		<span class="de">und wenn Du willst...</span>
+		<span class="en" style="display:none">and if you want...</span>
+		<label>
+			<span class="de">Ändere den Namen deiner Oxocard</span>
+			<span class="en" style="display:none">Change the name of your Oxocard</span>
+			<input type="text" name="oxocard_name" />
+		</label>
+		<input type="submit" class="de" name="save" value="Speichern" />
+		<input type="submit" class="en" name="save" value="Save" style="display:none"/>
+	</form>
+
+	<div id="delete_wifi_wrapper">
+		<h1 class="de">Vorhandene WiFis löschen.</h1>
+		<h1 class="en" style="display:none">Delete exisiting WiFis.</h1>
+		<ul id="delete_wifi_list">
+		
+		</ul>
+	</div>
+
+	<div id="popup_wrapper">
+		<div id="popup_header">title</div>
+		<div id="popup_content"><div class="ball-pulse"><div></div><div></div><div></div></div></div>
+	</div>
+	<div id="popup_background"></div>
+
+</main>
+<span id="oxocard_id"></span>
+<script src="js/main.js"></script>
+</body>
+</html>

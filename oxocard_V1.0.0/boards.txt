@@ -1,0 +1,58 @@
+menu.UploadSpeed=Upload Speed
+menu.FlashFreq=Flash Frequency
+menu.FlashMode=Flash Mode
+menu.FlashSize=Flash Size
+menu.PartitionScheme=Partition Scheme
+menu.DebugLevel=Core Debug Level
+
+##############################################################
+
+oxocard.name=Oxocard
+
+oxocard.upload.tool=esptool
+oxocard.upload.maximum_size=1310720
+oxocard.upload.maximum_data_size=294912
+oxocard.upload.wait_for_upload_port=true
+
+oxocard.serial.disableDTR=true
+oxocard.serial.disableRTS=true
+
+oxocard.build.mcu=esp32
+oxocard.build.core=esp32
+oxocard.build.variant=esp32
+oxocard.build.board=ESP32_DEV
+
+oxocard.build.f_cpu=240000000L
+oxocard.build.flash_size=4MB
+oxocard.build.flash_freq=80m
+oxocard.build.flash_mode=dio
+oxocard.build.boot=qio
+oxocard.build.partitions=default
+
+oxocard.menu.UploadSpeed.230400=230400
+oxocard.menu.UploadSpeed.230400.windows.upload.speed=256000
+oxocard.menu.UploadSpeed.230400.upload.speed=230400
+oxocard.menu.UploadSpeed.115200=115200
+oxocard.menu.UploadSpeed.115200.upload.speed=115200
+oxocard.menu.UploadSpeed.256000.windows=256000
+oxocard.menu.UploadSpeed.256000.upload.speed=256000
+oxocard.menu.UploadSpeed.460800.linux=460800
+oxocard.menu.UploadSpeed.460800.macosx=460800
+oxocard.menu.UploadSpeed.460800.upload.speed=460800
+oxocard.menu.UploadSpeed.512000.windows=512000
+oxocard.menu.UploadSpeed.512000.upload.speed=512000
+oxocard.menu.UploadSpeed.921600=921600
+oxocard.menu.UploadSpeed.921600.upload.speed=921600
+
+oxocard.menu.DebugLevel.none=None
+oxocard.menu.DebugLevel.none.build.code_debug=0
+oxocard.menu.DebugLevel.error=Error
+oxocard.menu.DebugLevel.error.build.code_debug=1
+oxocard.menu.DebugLevel.warn=Warn
+oxocard.menu.DebugLevel.warn.build.code_debug=2
+oxocard.menu.DebugLevel.info=Info
+oxocard.menu.DebugLevel.info.build.code_debug=3
+oxocard.menu.DebugLevel.debug=Debug
+oxocard.menu.DebugLevel.debug.build.code_debug=4
+oxocard.menu.DebugLevel.verbose=Verbose
+oxocard.menu.DebugLevel.verbose.build.code_debug=5
