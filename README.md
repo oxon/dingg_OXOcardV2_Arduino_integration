@@ -33,6 +33,24 @@ oxocard.system->turnOff();
 ```
 Alle verfügbaren Funktionen sind im [Blockly][Blockly] oder direkt in den entsprechenden [Header-Files der Library][Header-Files] ersichtlich.
 
+## Tipps
+Ein [Blockly][Blockly]-Programm kann relativ einfach ins Arduino integriert werden. Es muss lediglich der Runner und die user_main()-Funktion angepasst werden:
+```Arduino
+#include "OXOcardRunner.h"    ->    #include "OXOcardRunnerV2.h"
+void user_main() {            ->    void setup() {
+    // setup...                     }
+    while(1) {
+        // loop...                  void loop() {
+    }                               }
+}
+```
+
+## Bekannte Probleme
+Die im [Blockly][Blockly] verfügbaren Sound-Effekte konnten bisher noch nicht erfolgreich in die Arduino-ESP32-Umgebung integriert werden. Der folgende Funktionsaufruf erzeugt also noch einen Kompilier-Fehler und kann daher nicht verwendet werden.
+```Arduino
+oxocard.audio->playWavFile((uint8_t*)alarm_wav, alarm_wav_size, false);
+```
+
 <!-- [![Hello][OXOcard_gif]][OXOcard] -->
 
 ## License
