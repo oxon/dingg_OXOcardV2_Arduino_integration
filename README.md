@@ -58,7 +58,7 @@ This project is licensed under the terms of the [GNU Lesser General Public Licen
 
 
 
-[OXOcard_logo]:http://www.oxocard.ch/wp-content/uploads/2017/04/logo_oxocard_inverted.png
+[OXOcard_logo]:https://site.stage.oxocard.ch/assets/images/logos/logo.png
 [OXOcard]:http://www.oxocard.ch/
 [Blockly]:https://blockly.oxocard.ch/
 [Arduino]:http://www.arduino.cc/
