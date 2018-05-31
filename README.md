@@ -7,7 +7,7 @@ Das hier ersichtliche Repository ist als Zwischenglied für die Integration der 
 
 ## Installation
 1. Folge der Installations-Anleitung für den Arduino core für ESP32 auf: https://github.com/espressif/arduino-esp32
-2. Lade dieses Repository als .zip-Datei herunter und entpacke es unter dem Pfad:
+2. Lade dieses Repository als .zip-Datei herunter und entpacke es. Dann verschiebe den "oxocard_V1.0.0"-Ordner nach:
 [ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/
 3. Starte deine Arduino IDE neu
 4. Wähle die Oxocard unter: Tools->Board->Oxocard
@@ -58,7 +58,7 @@ This project is licensed under the terms of the [GNU Lesser General Public Licen
 
 
 
-[OXOcard_logo]:http://www.oxocard.ch/wp-content/uploads/2017/04/logo_oxocard_inverted.png
+[OXOcard_logo]:https://site.stage.oxocard.ch/assets/images/logos/logo.png
 [OXOcard]:http://www.oxocard.ch/
 [Blockly]:https://blockly.oxocard.ch/
 [Arduino]:http://www.arduino.cc/
