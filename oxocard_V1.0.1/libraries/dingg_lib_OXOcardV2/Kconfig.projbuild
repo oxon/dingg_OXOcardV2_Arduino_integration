@@ -1,0 +1,9 @@
+menu "OXOcard LIB configuration"
+
+config SLEEP_BUTTON_BYTE
+	int "Sleep button byte"
+	default 63
+	help
+		User either 0 (no buttons) or 63 (0b00111111 - all buttons can be used to wake up).
+
+endmenu
