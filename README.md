@@ -6,13 +6,20 @@ Du möchtest einmal hinter die Kulissen deines Computers oder Handys schauen und
 Das hier ersichtliche Repository ist als Zwischenglied für die Integration der Oxocard in die Arduino-ESP32-Umgebung gedacht.
 
 ## Installation
-1. Folge der Installations-Anleitung für den Arduino core für ESP32 auf: https://github.com/espressif/arduino-esp32
-2. Lade dieses Repository als .zip-Datei herunter und entpacke es. Dann verschiebe den "oxocard_V1.0.X"-Ordner nach:
+1. Lade zuerst die neuste Arduino IDE Version von der Aduino Website herunter: https://www.arduino.cc/en/Main/Software
+Scrolle zur Arduino IDE und klicke auf den passenden Download-Link für dein Betriebssystem. Auf der nächsten Seite kannst du auf „JUST DOWNLOAD“ klicken um die Daten herunterzuladen und anschließend zu installieren.
+2. Lade den passenden CH34x-Treiber für dein Betriebssystem herunter und installiere ihn:<br>
+Mac: http://old.oxocard.ch/Arduino/Downloads/CH341SER_MAC.zip<br>
+Linux: http://old.oxocard.ch/Arduino/Downloads/CH341SER_LINUX.zip<br>
+Windows: http://old.oxocard.ch/Arduino/Downloads/CH341SER_WINDOWS.zip<br>
+Damit der Treiber erkannt wird, musst du eventuell deinen Computer Neustarten.
+3. Folge der Installations-Anleitung für den Arduino core für ESP32 auf: https://github.com/espressif/arduino-esp32
+4. Lade dieses Repository als .zip-Datei herunter und entpacke es. Dann verschiebe den "oxocard_V1.0.X"-Ordner nach:
 [ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/
-3. Starte deine Arduino IDE neu
-4. Wähle die Oxocard unter: Tools->Board->Oxocard
-5. Wähle den korrekten Port unter: Tools->Port
-6. Wähle ein Beispiel unter: File->Examples->dingg_lib_OXOcardV2
+5. Starte deine Arduino IDE neu
+6. Wähle die Oxocard unter: Tools->Board->Oxocard
+7. Wähle den korrekten Port unter: Tools->Port
+8. Wähle ein Beispiel unter: File->Examples->dingg_lib_OXOcardV2
 
 Weitere Informationen zur Oxocard findest du auf unserer [Homepage][OXOcard].
 
