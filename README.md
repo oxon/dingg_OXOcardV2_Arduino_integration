@@ -9,9 +9,9 @@ Das hier ersichtliche Repository ist als Zwischenglied für die Integration der 
 1. Lade zuerst die neuste Arduino IDE Version von der Aduino Website herunter: https://www.arduino.cc/en/Main/Software
 Scrolle zur Arduino IDE und klicke auf den passenden Download-Link für dein Betriebssystem. Auf der nächsten Seite kannst du auf „JUST DOWNLOAD“ klicken um die Daten herunterzuladen und anschließend zu installieren.
 2. Lade den passenden CH34x-Treiber für dein Betriebssystem herunter und installiere ihn:<br>
-Mac: http://old.oxocard.ch/Arduino/Downloads/CH341SER_MAC.zip<br>
-Linux: http://old.oxocard.ch/Arduino/Downloads/CH341SER_LINUX.zip<br>
-Windows: http://old.oxocard.ch/Arduino/Downloads/CH341SER_WINDOWS.zip<br>
+Mac: https://oxocard.ch/downloads/ch341ser_mac.zip<br>
+Linux: https://oxocard.ch/downloads/ch341ser_linux.zip<br>
+Windows: https://oxocard.ch/downloads/ch341ser_win.zip<br>
 Damit der Treiber erkannt wird, musst du eventuell deinen Computer Neustarten.
 3. Folge der Installations-Anleitung für den Arduino core für ESP32 auf: https://github.com/espressif/arduino-esp32
 4. Lade dieses Repository als .zip-Datei herunter und entpacke es. Dann verschiebe den "oxocard_V1.0.X"-Ordner nach:
